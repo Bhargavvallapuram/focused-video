@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Focused YouTube Video</title>
+    <style>
+      /* Remove all default spacing and make the iframe fill the viewport */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        background-color: #000;
+      }
+
+      .video-container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="video-container">
+      <!-- Replace the video ID below (T0u5nwSA0w0) with any other ID when you need a different video -->
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/T0u5nwSA0w0?autoplay=1&rel=0&modestbranding=1&showinfo=0"
+        title="YouTube video player"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </body>
+</html>
